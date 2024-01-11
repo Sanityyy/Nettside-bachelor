@@ -1,0 +1,28 @@
+body {
+    font-family: Helvetica;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header, nav, main, footer {
+    margin: 20px;
+}
+
+.team-members {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.team-member {
+    flex: 1 0 30%; /* This means that each team member will take up 30% of the width of the .team-members container. Adjust this value as needed. */
+    margin: 1em;
+}
+
+.team-member img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
