@@ -6,3 +6,6 @@ import tailwind from "@astrojs/tailwind";
 export default defineConfig({
   integrations: [tailwind()]
 });
+{
+  site: 'https://itfag.usn.no/grupper/D06-24/'
+}
