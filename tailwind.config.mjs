@@ -8,10 +8,16 @@ export default {
 				deliriumyellow:"#fdca40",
 				deliriumblue:"#3772ff",
 				deliriumred:"#df2935",
-				deleriumwhite:"#e6e8e6",
+				deliriumwhite:"#e6e8e6",
 
 			}
 		},
+		fontFamiliy: {
+			sans: ['Inter var', 'Inter', 'sans-serif'],
+			serif: ['Merriweather', 'serif'],
+		}
+
+
 		
 	},
 	plugins: [],
