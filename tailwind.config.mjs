@@ -13,7 +13,7 @@ export default {
 			}
 		},
 		fontFamiliy: {
-			sans: ['Inter var', 'Inter', 'sans-serif'],
+			inter: [ 'Inter','Inter var', 'sans-serif'],
 			serif: ['Merriweather', 'serif'],
 		}
 

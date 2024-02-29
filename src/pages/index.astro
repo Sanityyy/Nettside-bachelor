@@ -1,10 +1,12 @@
 ---
 import MySiteLayout from "../layouts/layout.astro";
+const { title } = Astro.props;
+const groupName = "Delirium";
 ---
 
-<MySiteLayout title="Gruppe 6">
+<MySiteLayout title="{groupName}">
   <section class="text-center p-6 bg-gradient-to-tr from-deliriumyellow to-deliriumred">
-    <h2 class="text-3xl font-bold mb-4 text-white">Welcome to Gruppe 6</h2>
+    <h2 class="text-3xl font-bold mb-4 text-white">Welcome to {groupName}</h2>
     <p class="mb-6 text-white">
       We are a team of talented individuals dedicated to disrupting the skies
       and silencing the drones.
@@ -78,7 +80,8 @@ import MySiteLayout from "../layouts/layout.astro";
 
     <!-- Project Sprints -->
 <section class="text-center p-6 bg-deliriumblue">
-  <h2 class="text-3xl font-bold mb-4 text-black">Project Sprints</h2>
+  <h2 class="text-3xl font-bold mb-4 text-black ">Project Sprints</h2>
+  <h2 class="text-3xl font-bold mb-4 text-black font-sans">Project Sprints </h2>
   
   
 </section>
