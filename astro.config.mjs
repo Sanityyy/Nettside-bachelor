@@ -7,10 +7,9 @@ export default defineConfig({
   integrations: [tailwind()]
 });
 {
-  site: 'https://itfag.usn.no/grupper/D06-24/'
-  base: '/grupper/D06-24/'
-
-
+  
 }
+
+
 
   
