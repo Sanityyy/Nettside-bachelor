@@ -22,3 +22,4 @@ pnpm-debug.log*
 
 # pictures
 src/assets/placeholder.jpg
+test.astro
