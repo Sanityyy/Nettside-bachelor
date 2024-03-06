@@ -4,11 +4,16 @@ export default {
 	theme: {
 		extend: {
 			colors: {
-				deliriumblack:"#080708",
-				deliriumyellow:"#fdca40",
-				deliriumblue:"#3772ff",
-				deliriumred:"#df2935",
-				deliriumwhite:"#e6e8e6",
+				legacydeliriumblack:"#080708",
+				legacydeliriumyellow:"#fdca40",
+				legacydeliriumblue:"#3772ff",
+				legacydeliriumred:"#df2935",
+				legacydeliriumwhite:"#e6e8e6",
+				deliriumwhite:"#f1f1f2",
+				deliriumblue:{DEFAULT:"#5f7f9f",
+				light:"#bdcde6",
+				dark:"#001639"},
+				deliriumred:"#ED3237"
 
 			}
 		},
