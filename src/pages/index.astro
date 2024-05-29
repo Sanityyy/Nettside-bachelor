@@ -1,182 +1,49 @@
 ---
-import MySiteLayout from "../layouts/layout.astro";
-const { title } = Astro.props;
-const groupName = "Delirium";
+const documentPath = "/Hovedrapport_Delirium_UTEN.pdf";
 ---
 
-<MySiteLayout title="{groupName}">
-  <section class="text-center p-6 bg-deliriumblue">
-    <h2 class="text-3xl font-bold mb-4 text-white">Welcome to {groupName}</h2>
-    <p class="mb-6 text-white">
-      We are a team of talented individuals dedicated to disrupting the skies
-      and silencing the drones.
-    </p>
-    <p class="mb-6 text-white">
-      Our project is focused on developing a system designed to test the
-      resilience of drones against GPS interference. By simulating GPS jamming
-      and spoofing attacks, we aim to identify vulnerabilities within Kongsberg
-      Defence and Aerospace's drone technologies. This initiative is about
-      challenging our products in controlled environments, ensuring they are
-      robust and secure against real-world threats.
-    </p>
-  </section>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Delirium</title>
+    <link rel="icon" href="/LOGO_delirium.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-  <section class="text-center p-6 bg-deliriumwhite">
-    <h2 class="text-3xl font-bold mb-4">Meet Our Team</h2>
-    <p class="mb-6">Get to know the professionals.</p>
+  <body>
+    <div class="flex flex-col h-screen overflow-hidden">
+      <header class="w-full text-center border-b border-grey p-4 bg-[#f1f1f2]">
+        <div>
+          <img
+            src="/LOGO_delirium.svg"
+            alt="Delirium"
+            class="object-contain h-20 w-30"
+          />
+        </div>
 
-    <div
-      class="grid grid-cols-2 gap-10 justify-items-center align-items-center"
-    >
-      <div class="max-w-sm bg-white rounded-lg shadow-lg p-4">
-        <img src="/Stian.jpg" alt="Stian" class="w-full h-auto rounded-lg" />
-        <h3 class="text-xl font-semibold mt-3">Stian</h3>
-        <p class="text-gray-600">
-          The Code Conjurer - With a keyboard as his wand and a mind brimming
-          with spells of logic, Stian weaves enchantments into software,
-          crafting the digital keys to disrupt the skies and ground the drones.
-        </p>
-      </div>
+        <div class="">
+          <a href={documentPath} target="_blank" rel="noopener noreferrer" class="">
+            Read the report
+          </a>
+        </div>
+      </header>
 
-      <div class="max-w-sm bg-white rounded-lg shadow-lg p-4">
-        <img src="/Anders.jpg" alt="Anders" class="w-full h-auto rounded-lg" />
-        <h3 class="text-xl font-semibold mt-3">Anders</h3>
-        <p class="text-gray-600">
-          The Algorithm Alchemist - In the labyrinth of code, Anders mixes
-          potions of algorithms, transforming base data into golden insights
-          that navigate our quest to silence the drones' whispering wings.
-        </p>
-      </div>
+      <main class="flex-1 overflow-y-scroll">
+        <div>
+          <img src="/Delirium.png" alt="" class="h-auto max-w-full">
+        </div>
+      </main>
 
-      <div class="max-w-sm bg-white rounded-lg shadow-lg p-4">
-        <img src="/Helge.jpg" alt="Helge" class="w-full h-auto rounded-lg" />
-        <h3 class="text-xl font-semibold mt-3">Helge</h3>
-        <p class="text-gray-600">
-          The Power Sage - Drawing from the ancient wells of electrons, Helge
-          ensures our devices thrive not just on power but on wisdom. Under his
-          guidance, our gadgets sip energy, ready to stand the test of time and
-          drones.
-        </p>
-      </div>
-
-      <div class="max-w-sm bg-white rounded-lg shadow-lg p-4">
-        <img
-          src="/Andreas.jpg"
-          alt="Andreas"
-          class="w-full h-auto rounded-lg"
-        />
-        <h3 class="text-xl font-semibold mt-3">Andreas</h3>
-        <p class="text-gray-600">
-          The Circuitry Craftsman - Amidst a forest of wires and the scent of
-          soldering, Andreas sculpts the heart of our project. His creations
-          buzz with the power to mute the skies, grounding drones with an
-          electric whisper.
-        </p>
-      </div>
+      <footer class="w-full text-center border-t border-grey p-4 bg-[#f1f1f2]">
+        some text \n /n
+        instagram
+      </footer>
     </div>
-  </section>
-
-  <!-- Project Sprints -->
-  <section class="text-center p-6 bg-deliriumblue content-center">
-    <h2 class="text-3xl font-bold mb-4 text-black content-center">Project Sprints</h2>
-
-    <a
-      class="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700"
-    >
-      <img
-        class="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg"
-        src="/sprint1.jpg"
-        alt=""
-      />
-      <div class="flex flex-col justify-between p-4 leading-normal">
-        <h5
-          class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
-        >
-          Sprint 1
-        </h5>
-        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
-          Denne sprinten begynte vi vår rapport skriving og vi har satt opp
-          flight controlleren vår med software.
-        </p>
-      </div>
-    </a>
-
-    <a
-      class="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700 "
-    >
-      <img
-        class="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg"
-        src="/sprint2.jpg"
-        alt=""
-      />
-      <div class="flex flex-col justify-between p-4 leading-normal">
-        <h5
-          class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
-        >
-          Sprint 2
-        </h5>
-        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
-          Vi har fått tilgang til Jira. Vi har begynt å utvikle jamming teknologien vår. Rapporten begynner å ta skikkilig form og har passert 30 sider.Vi har fått inn skjermer på kontoret. 
-        </p>
-      </div>
-    </a>
-
-    <a
-      class="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700"
-    >
-      <img
-        class="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg"
-        src="/sprint3.jpg"
-        alt=""
-      />
-      <div class="flex flex-col justify-between p-4 leading-normal">
-        <h5
-          class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
-        >
-          Sprint 3
-        </h5>
-        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
-          Denne sprinten har vi nådd viktige milepæler i prosjektet vårt, MVP 1 og MVP 2. Vi har låvende generalprøver før presentasjon 2. og vi har startet en dialog med NKOM om om å få lov til å teste GPS jamming teknologien vår. 
-        </p>
-      </div>
-    </a>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <a
-      class="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700"
-    >
-      <img
-        class="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg"
-        src="/docs/images/blog/image-4.jpg"
-        alt=""
-      />
-      <div class="flex flex-col justify-between p-4 leading-normal">
-        <h5
-          class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
-        >
-          Noteworthy technology acquisitions 2021
-        </h5>
-        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
-          Here are the biggest enterprise technology acquisitions of 2021 so
-          far, in reverse chronological order.
-        </p>
-      </div>
-    </a>
-  </section>
-</MySiteLayout>
+  </body>
+</html>
