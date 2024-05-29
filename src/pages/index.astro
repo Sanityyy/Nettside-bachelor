@@ -17,33 +17,40 @@ const documentPath = "/Hovedrapport_Delirium_UTEN.pdf";
   </head>
 
   <body>
-    <div class="flex flex-col h-screen overflow-hidden">
-      <header class="w-full text-center border-b border-grey p-4 bg-[#f1f1f2]">
-        <div>
-          <img
-            src="/LOGO_delirium.svg"
-            alt="Delirium"
-            class="object-contain h-20 w-30"
-          />
-        </div>
-
-        <div class="">
-          <a href={documentPath} target="_blank" rel="noopener noreferrer" class="">
-            Read the report
-          </a>
+    <div class="flex flex-col h-screen overflow-hidden ">
+      <header class="w-full text-center border-b border-grey p-4 align-middle bg-[#f1f1f2]">
+        <div class="flex justify-between align-middle">
+          <div>
+            <img
+              src="/LOGO_delirium.svg"
+              alt="Delirium"
+              class="object-contain h-20 w-30"
+            />
+          </div>
+          <div class=" ">
+            <h1 class="font-bold">The delirium report</h1>
+            <a
+              href={documentPath}
+              target="_blank"
+              rel="noopener noreferrer"
+              class=""
+            >
+              Click here to read the report
+            </a>
+          </div>
         </div>
       </header>
 
-      <main class="flex-1 overflow-y-scroll">
-        <div>
-          <img src="/Delirium.png" alt="" class="h-auto max-w-full">
-        </div>
-      </main>
+    <main class="flex-1 overflow-y-scroll">
+      <div>
+        <img src="/Delirium.png" alt="" class="h-auto max-w-full" />
+      </div>
 
-      <footer class="w-full text-center border-t border-grey p-4 bg-[#f1f1f2]">
-        some text \n /n
-        instagram
-      </footer>
-    </div>
+      <div class="w-full bg-[#5F7F9D]"></div>
+    </main>
+
+    <footer class="w-full text-center border-t border-grey p-4 bg-[#f1f1f2]">
+      Følg oss på instagram
+    </footer>
   </body>
 </html>
