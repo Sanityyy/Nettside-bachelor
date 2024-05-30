@@ -17,17 +17,19 @@ const documentPath = "/Hovedrapport_Delirium_UTEN.pdf";
   </head>
 
   <body>
-    <div class="flex flex-col h-screen overflow-hidden ">
-      <header class="w-full text-center border-b border-grey p-4 align-middle bg-[#f1f1f2]">
-        <div class="flex justify-between align-middle">
-          <div>
+    <div class="flex flex-col h-screen overflow-hidden">
+      <header
+        class="w-full text-center border-b border-grey align-middle bg-[#f1f1f2]"
+      >
+        <div class="flex justify-left align-middle divide-x divide-black ">
+          <div class=" px-8">
             <img
               src="/LOGO_delirium.svg"
-              alt="Delirium"
+              alt="Delirium logo"
               class="object-contain h-20 w-30"
             />
           </div>
-          <div class=" ">
+          <div class=" px-8">
             <h1 class="font-bold">The delirium report</h1>
             <a
               href={documentPath}
@@ -41,16 +43,38 @@ const documentPath = "/Hovedrapport_Delirium_UTEN.pdf";
         </div>
       </header>
 
-    <main class="flex-1 overflow-y-scroll">
-      <div>
-        <img src="/Delirium.png" alt="" class="h-auto max-w-full" />
-      </div>
+      <main class="flex-1 overflow-y-scroll  ">
+        <div class="flex justify-center items-center">
+          <img src="/Delirium.png" alt="" class="h-[40rem] " />
+        </div>
 
-      <div class="w-full bg-[#5F7F9D]"></div>
-    </main>
+        <div class="w-full bg-[#5F7F9D]">
+          <h1 class="font-bold text-center">HEre be sprints</h1>
+          <div
+            class="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700"
+          >
+            <img src="/sprint/sprint1.jpg" alt="" class="" />
+            <h1
+              class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-black"
+            >
+              Sprint 5
+            </h1>
+            <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+              Sprint 5 var sprinten vi kom i gang med data-tekniske
+              implementeringer (GUI og interface). Vi fant også koffert,
+              mini-datamaskin og touch-skjerm til systemet. Vi hadde også
+              fremgang med radioene i GNU Radio Companion og vurderte
+              samarbeidet til å fungere bra. Vi hadde også implementert nye
+              rutiner for stand-up møter og alle var fornøyde med det nye
+              formatet.
+            </p>
+          </div>
+        </div>
+      </main>
 
-    <footer class="w-full text-center border-t border-grey p-4 bg-[#f1f1f2]">
-      Følg oss på instagram
-    </footer>
+      <footer class="w-full text-center border-t border-grey p-4 bg-[#f1f1f2]">
+        Følg oss på instagram
+      </footer>
+    </div>
   </body>
 </html>
