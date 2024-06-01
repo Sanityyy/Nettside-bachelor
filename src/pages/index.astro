@@ -21,15 +21,15 @@ const documentPath = "/Hovedrapport_Delirium_UTEN.pdf";
       <header
         class="w-full text-center border-b border-grey align-middle bg-[#f1f1f2]"
       >
-        <div class="flex justify-left align-middle divide-x divide-black ">
-          <div class=" px-8">
+        <div class="flex justify-left align-middle divide-x divide-black">
+          <div class="px-8">
             <img
               src="/LOGO_delirium.svg"
               alt="Delirium logo"
               class="object-contain h-20 w-30"
             />
           </div>
-          <div class=" px-8">
+          <div class="px-8 flex-col content-center">
             <h1 class="font-bold">The delirium report</h1>
             <a
               href={documentPath}
@@ -43,38 +43,210 @@ const documentPath = "/Hovedrapport_Delirium_UTEN.pdf";
         </div>
       </header>
 
-      <main class="flex-1 overflow-y-scroll  ">
+      <main class="flex-1 overflow-y-scroll">
         <div class="flex justify-center items-center">
-          <img src="/Delirium.png" alt="" class="h-[40rem] " />
+          <img src="/Delirium.png" alt="" class="h-[50rem]" />
         </div>
 
-        <div class="w-full bg-[#5F7F9D]">
-          <h1 class="font-bold text-center">HEre be sprints</h1>
-          <div
-            class="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700"
-          >
-            <img src="/sprint/sprint1.jpg" alt="" class="" />
-            <h1
-              class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-black"
-            >
-              Sprint 5
-            </h1>
-            <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
-              Sprint 5 var sprinten vi kom i gang med data-tekniske
-              implementeringer (GUI og interface). Vi fant også koffert,
-              mini-datamaskin og touch-skjerm til systemet. Vi hadde også
-              fremgang med radioene i GNU Radio Companion og vurderte
-              samarbeidet til å fungere bra. Vi hadde også implementert nye
-              rutiner for stand-up møter og alle var fornøyde med det nye
-              formatet.
-            </p>
+        <div
+          class="px-4 lg:px-5 max-w-screen-md mx-auto flex-col justify-center items-center"
+        >
+          <div class="flex flex-row-reverse mb-5 lg:mb-0 justify-center">
+            <div class="lg:w-1/2 w-full">
+              <img class="w-full h-auto" src="/sprint/sprint5.jpg" alt="..." />
+            </div>
+            <div class="lg:w-1/2 w-full">
+              <div
+                class="bg-black text-center h-full flex items-center justify-center"
+              >
+                <div
+                  class="text-white w-full my-auto text-center lg:text-left p-5"
+                >
+                  <h4 class="text-white">Sprint 5</h4>
+                  <p class="mb-0 text-white-50">
+                    Sprint 5 var sprinten vi kom i gang med data-tekniske
+                    implementeringer (GUI og interface). Vi fant også koffert,
+                    mini-datamaskin og touch-skjerm til systemet. Vi hadde også
+                    fremgang med radioene i GNU Radio Companion og vurderte
+                    samarbeidet til å fungere bra. Vi hadde også implementert
+                    nye rutiner for stand-up møter og alle var fornøyde med det
+                    nye formatet.
+                  </p>
+                  <hr
+                    class="hidden lg:block mb-0 mx-0 border-t border-gray-700"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex mb-5 lg:mb-0 justify-center">
+            <div class="lg:w-1/2 w-full">
+              <img class="w-full h-auto" src="/sprint/sprint6.jpg" alt="..." />
+            </div>
+            <div class="lg:w-1/2 w-full">
+              <div
+                class="bg-black text-center h-full flex items-center justify-center"
+              >
+                <div
+                  class="text-white w-full my-auto text-center lg:text-left p-5"
+                >
+                  <h4 class="text-white">Sprint 6</h4>
+                  <p class="mb-0 text-white-50">
+                    Sprint 6 ble brukt til å teste radioene for NKOM-søknaden.
+                    Finne ut signalstyrken for å beregne riktig rekkevidde.
+                    Dette viste seg å være mer tidkrevende enn vi først antok.
+                    Vi fikk også til å spoofe Navio2-HAT'en og en Garmin
+                    GPS-klokke trådløst inne i Faraday-buret. Vi hadde noen
+                    problemer med sykdom denne sprinten.
+                  </p>
+                  <hr
+                    class="hidden lg:block mb-0 mx-0 border-t border-gray-700"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex flex-row-reverse mb-5 lg:mb-0 justify-center">
+            <div class="lg:w-1/2 w-full">
+              <img class="w-full h-auto" src="/sprint/sprint7.jpg" alt="..." />
+            </div>
+            <div class="lg:w-1/2 w-full">
+              <div
+                class="bg-black text-center h-full flex items-center justify-center"
+              >
+                <div
+                  class="text-white w-full my-auto text-center lg:text-left p-5"
+                >
+                  <h4 class="text-white">Sprint 7</h4>
+                  <p class="mb-0 text-white-50">
+                    Sprint 7 fikk vi bevist at vi kunne sweepe med protocol
+                    aware jammer, men det var enkelte integrasjonsproblemer.
+                    Disse ser vi på i sprint 8. Vi fikk inn continous
+                    integration i Github actions. Rapporten vokser og vi
+                    begynner å bli fornøyd med strukturen. Vi fikk også inn
+                    terminal-vinduer i GUI-en. Vi nærmet oss også ferdigstilling
+                    på NKOM-søknad.
+                  </p>
+                  <hr
+                    class="hidden lg:block mb-0 mx-0 border-t border-gray-700"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex mb-5 lg:mb-0 justify-center">
+            <div class="lg:w-1/2 w-full">
+              <img class="w-full h-auto" src="/sprint/sprint8.jpg" alt="..." />
+            </div>
+            <div class="lg:w-1/2 w-full">
+              <div
+                class="bg-black text-center h-full flex items-center justify-center"
+              >
+                <div
+                  class="text-white w-full my-auto text-center lg:text-left p-5"
+                >
+                  <h4 class="text-white">Sprint 8</h4>
+                  <p class="mb-0 text-white-50">
+                    Sprint 8 ble brukt til å fikse sweeping-funksjonen med
+                    protocol aware jammer. Vi fortsatte med å fylle inn innhold
+                    i rapporten. Vi planla også hvordan vi skulle gjøre det på
+                    EXPOen. Vi hadde også en sosial sammenkomst denne sprinten.
+                    Vi bemerket oss at rød tråd må jobbes med, og fordelte
+                    ansvarsområder her. Vi begynte å kjenne på at det
+                    tidsfristene kommer fort. Det var også en del sykdom denne
+                    sprinten, Helge var hjemme med syke barn, og Anders hos
+                    tannlegen. Vi oppdaget også problemer med Ubuntu og
+                    touchskjermen.
+                  </p>
+                  <hr
+                    class="hidden lg:block mb-0 mx-0 border-t border-gray-700"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex flex-row-reverse mb-5 lg:mb-0 justify-center">
+            <div class="lg:w-1/2 w-full">
+              <img class="w-full h-auto" src="/sprint/sprint9.jpg" alt="..." />
+            </div>
+            <div class="lg:w-1/2 w-full">
+              <div
+                class="bg-black text-center h-full flex items-center justify-center"
+              >
+                <div
+                  class="text-white w-full my-auto text-center lg:text-left p-5"
+                >
+                  <h4 class="text-white">Sprint 9</h4>
+                  <p class="mb-0 text-white-50">
+                    Vi fikk bestilt prøver til merch (klær). Vi landet også på
+                    en dato for når vi skal sende over rapporten til veiledere
+                    for gjennomlesing (10. Mai). Vi var også bare dager unna å
+                    få kofferten vår! Vi gjorde avtale med KDA for freebies til
+                    utdeling på EXPO og rollups fra KCSC og KDA. Vi opplevde
+                    også problemer med å bruke API-et via GUI-en, og fant ikke
+                    ut av hva feilen var. Vi fikk også konkurranse om tilgangen
+                    til signalanalysatoren i fysikklabben, men dette løste seg.
+                    Vi feiret også 400-årsdagen til Kongsberg med kongeparet
+                    utenfor kirken!
+                  </p>
+                  <hr
+                    class="hidden lg:block mb-0 mx-0 border-t border-gray-700"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex mb-5 lg:mb-0 justify-center">
+            <div class="lg:w-1/2 w-full">
+              <img class="w-full h-auto" src="/sprint/sprint10.jpg" alt="..." />
+            </div>
+            <div class="lg:w-1/2 w-full">
+              <div
+                class="bg-black text-center h-full flex items-center justify-center"
+              >
+                <div
+                  class="text-white w-full my-auto text-center lg:text-left p-5"
+                >
+                  <h4 class="text-white">Sprint 10</h4>
+                  <p class="mb-0 text-white-50">
+                    Vi fikk kofferten denne sprinten. Det tok lenger tid enn
+                    antatt. Vi fikk også skrevet inn mye i rapporten. Vi brukte
+                    denne sprinten til å ta med oss panten til butikken, dette
+                    går inn i banken for sosiale sammenkomster. Ellers fortsatte
+                    vi med problemer rundt touchskjermen, Ubuntu vil ikke
+                    samarbeide med touch. Vi fikk også assistanse til å sette
+                    opp C++ programmeringsmiljø av Ruben fra forrige års
+                    Hivemind-prosjekt.
+                  </p>
+                  <hr
+                    class="hidden lg:block mb-0 mx-0 border-t border-gray-700"
+                  />
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-      </main>
 
-      <footer class="w-full text-center border-t border-grey p-4 bg-[#f1f1f2]">
-        Følg oss på instagram
-      </footer>
+        <footer
+          class="w-full text-center border-t border-grey p-4 bg-[#f1f1f2] "
+        >
+        <a href=https://www.instagram.com/delirium_kongsberg/
+        target="_blank"
+        rel="noopener noreferrer" class="flex justify-center space-x-1">
+          <p>Følg oss på instagram</p>
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/2048px-Instagram_icon.png"
+            alt=""
+            class="max-h-5"
+          />
+        </a>
+        </footer>
+      </main>
     </div>
   </body>
 </html>
